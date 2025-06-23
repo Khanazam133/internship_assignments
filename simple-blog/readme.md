@@ -13,6 +13,4 @@ http://localhost:5000/api/test/snap2
 
 http://localhost:5000/api/test/snap3
 
-# output
-
 ![image alt](https://github.com/Khanazam133/blog/blob/main/simple-blog/image.png?raw=true)
