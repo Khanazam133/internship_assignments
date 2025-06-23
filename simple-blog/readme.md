@@ -12,3 +12,6 @@ http://localhost:5000/api/test/snap1
 http://localhost:5000/api/test/snap2
 
 http://localhost:5000/api/test/snap3
+
+# output
+![alt text](image.png)
