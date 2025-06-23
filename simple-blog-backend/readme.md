@@ -1,4 +1,4 @@
-# 🚀 How to Run the Simple Blog Backend
+# 🚀 How to Run the code
 
 ### 1. Install dependencies
 ```bash
