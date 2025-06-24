@@ -11,14 +11,14 @@ const getWeather = async (req, res) => {
     condition: 'Clear'
   };
 
-  try {
-    const weather = new Weather(mockData);
-    await weather.save();
+  // try {
+  //   const weather = new Weather(mockData);
+  //   await weather.save();
 
     res.json(mockData);
-  } catch (error) {
-    res.status(500).json({ error: 'Failed to store mock weather data' });
-  }
+  // } catch (error) {
+  //   res.status(500).json({ error: 'Failed to store mock weather data' });
+  // }
 };
 
 module.exports = { getWeather };
