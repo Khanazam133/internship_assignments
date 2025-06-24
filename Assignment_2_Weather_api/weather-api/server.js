@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const weatherRoutes = require('./routes/weatherRoutes');
@@ -6,7 +5,7 @@ const weatherRoutes = require('./routes/weatherRoutes');
 const app = express();
 app.use(express.json());
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect('mongodb://localhost:27017/weatherDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log("MongoDB connected"))
@@ -14,7 +13,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 app.use('/api/weather', weatherRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

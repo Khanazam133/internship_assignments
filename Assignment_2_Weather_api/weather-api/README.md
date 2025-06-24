@@ -1,25 +1,36 @@
-# Weather Information API
+# Weather API (Mock Version)
 
-Fetch real-time weather for a city using OpenWeatherMap.
+Simple beginner API that returns mock weather data.
 
 ## Tech Stack
 - Node.js
 - Express.js
 - MongoDB
-- Axios
 
 ## How to Run
-1. Clone repo and run `npm install`
-2. Set environment variables in `.env`
-3. Start server with `node server.js`
-4. API Endpoint: `GET /api/weather?city=London`
+
+1. Run MongoDB locally (or use MongoDB Compass for GUI)
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start server:
+   ```
+   node server.js
+   ```
+
+4. Test API:
+   ```
+   GET http://localhost:5000/api/weather?city=Delhi
+   ```
 
 ## Sample Response
+
 ```json
 {
-  "city": "London",
-  "temperature": 18.5,
-  "humidity": 72,
-  "condition": "Clouds"
+  "city": "Delhi",
+  "temperature": 30,
+  "humidity": 60,
+  "condition": "Clear"
 }
 ```
